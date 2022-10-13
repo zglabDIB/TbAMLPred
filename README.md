@@ -20,13 +20,13 @@ _(Please note that command may vary from version to version, so please check acc
 ___featureCounts -p -a gencode.annotation.gtf-o File_Count.txt -T 32 -t exon -M -g gene_id File.bam___<br/>
 ___grep -v "#" File_Count.txt | cut -f1,7| sed "s/.bam//g" >ALL_Input_Count.txt___<br/><br/>
 __Software:__ For executing the codes for Microarray or RNA-Seq data, both R and python are required to be installed in local machines.<br/><br/>
-__R programming environment:__
+* __R programming environment:__
     *	___Bioconductor___ <br/>
     *	___affy___ <br/>
     *	___hgu133plus2.db___ <br/>
     *	___frma___ <br/>
-    *	___DESeq2___ <br/><br/><br/>
-__Python programming Environment:__
+    *	___DESeq2___ <br/><br/>  
+* __Python programming Environment:__
     *	___Anaconda software packages for python v3.8___ <br/>
     *	___pandas___ <br/>
     *	___numpy___ <br/>
@@ -35,3 +35,15 @@ __Python programming Environment:__
     *	___pickle___ <br/>
     *	___umap-learn version 0.5.1___ <br/>
 
+Note: Except for ‘umap-learn’ anaconda packages contain all the library belonging to python. <br/>
+#### Code Execution Procedure: ####
+___Microarray:___ To execute the algorithm for microarray data, following steps must be followed.<br/>
+* All the input __.cel__ files should be placed in __INPUT_FILES__ folder. This directory also should contain __phenoData.txt__ file. Content of the file should be like as follows:<br/>
+If name of the __.cel__ file is AML_Sample.CEL then it should be written like ___INPUT_FILES/AML_Sample.CEL___.In EXAMPLE directory one instance is provided. To execute the file kept in __EXAMPLE__ directory just unzip the .cel files and copy the .cel files along with the __phenoData.txt__ into __INPUT_FILES__ directory and execute the command given in next sections.
+* ___Generate_Microarray_Intensity_using_R.r___ file generates the Intensity values of the .cel files specified in INPUT_FILES directory. Execute it by:
+  * ___Rscript Generate_Microarray_Intensity_using_R.r___
+* ___Generate_UMAP_Plot_Using_Python.py___ generates the UMAP clustering from the microarray intensity values. It ultimately outputs 2 graph specifies the clustering of new sample/samples with our training control and AML data from which one can understand whether the sample is normal or has AML.The script is executed by:<br/>
+  * ___python Generate_UMAP_Plot_Using_Python.py___
+* ___Logistic_Regression_Microarray_Prediction_Using_Python.py___ generates the predicted result given by Logistic Regression based machine learning model. The final output file will be generated in OUTPUT_FILES folder. The script is executed by:<br/>
+  * ___python Logistic_Regression_Microarray_Prediction_Using_Python.py___
+  	
