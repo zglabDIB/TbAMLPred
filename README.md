@@ -35,8 +35,13 @@ __Software:__ For executing the codes for Microarray or RNA-Seq data, both R and
     *	___pickle___ <br/>
     *	___umap-learn version 0.5.1___ <br/>
 
-Note: Except for ‘umap-learn’ anaconda packages contain all the library belonging to python. <br/>
+__Note:__
+1. Except for ‘umap-learn’ anaconda packages contain all the library belonging to python. <br/>
+2. To avoid any unwanted disruption during execution, it is recommended to use the same version of the software packages as mentioned above. <br/>
+
 #### Code Execution Procedure: ####
+Note: After downloading from github, user must  delete the ___placeholder.txt___ file from both ___INPUT_FILES___ and ___OUTPUT_FILES___ folder in both ___Microarray___ and ___RNA-Seq___ Directory before executing it. <br/>
+
 ___Microarray:___ To execute the algorithm for microarray data, following steps must be followed.<br/>
 * All the input __.cel__ files should be placed in __INPUT_FILES__ folder. This directory also should contain __phenoData.txt__ file. Content of the file should be like as follows:<br/>
 If name of the __.cel__ file is AML_Sample.CEL then it should be written like ___INPUT_FILES/AML_Sample.CEL___.In EXAMPLE directory one instance is provided. To execute the file kept in __EXAMPLE__ directory just unzip the .cel files and copy the .cel files along with the __phenoData.txt__ into __INPUT_FILES__ directory and execute the command given in next sections.
