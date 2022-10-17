@@ -27,10 +27,10 @@ __Software:__ For executing the codes for Microarray or RNA-Seq data, both R and
     *	___frma___ <br/>
     *	___DESeq2___ <br/><br/>  
 * __Python programming Environment:__
-    *	___Anaconda software packages for python v3.8___ <br/>
+    *	___Anaconda software packages for python version 3.8___ <br/>
     *	___pandas___ <br/>
     *	___numpy___ <br/>
-    *	___Scikit-Learn version 0.23.2___ <br/>
+    *	___scikit-learn version 0.23.2___ <br/>
     *	___matplotlib___ <br/>
     *	___pickle___ <br/>
     *	___umap-learn version 0.5.1___ <br/>
