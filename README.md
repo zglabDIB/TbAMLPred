@@ -32,7 +32,7 @@ __Software:__ For executing the codes for Microarray or RNA-Seq data, both R and
     *	___numpy___ <br/>
     *	___scikit-learn version 0.23.2___ <br/>
     *	___matplotlib___ <br/>
-    *	___pickleshare0.7.5___ <br/>
+    *	___pickleshare version 0.7.5___ <br/>
     *	___umap-learn version 0.5.1___ <br/>
 
 __Note:__
