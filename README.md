@@ -25,6 +25,7 @@ __Software:__ For executing the codes for Microarray or RNA-Seq data, both R and
     *	___affy___ <br/>
     *	___hgu133plus2.db___ <br/>
     *	___frma___ <br/>
+    * ___hgu133plus2frmavecs___ <br/>
     *	___DESeq2___ <br/><br/>  
 * __Python programming Environment:__
     *	___Anaconda software packages for python version 3.8___ <br/>
